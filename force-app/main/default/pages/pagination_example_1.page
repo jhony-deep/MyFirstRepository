@@ -1,0 +1,23 @@
+<apex:page controller="pagination_ex_1">
+    <apex:form >
+    <apex:pageBlock title="OPPORTUNITY">
+        
+        <apex:pageBlockButtons location="top">
+        <apex:commandButton value="first" action="{!controller.first}" rendered="{!controller.hasprevious}"/>
+            <apex:commandButton value="Next" action="{!controller.Next}" rendered="{!controller.hasnext}"/>
+            <apex:commandButton value="previous" action="{!controller.previous}" rendered="{!controller.hasnext}"/>
+            <apex:commandButton value="last" action="{!controller.last}" rendered="{!controller.hasprevious}"/>
+        </apex:pageBlockButtons>
+        <apex:pageBlockTable value="{!opty}" var="a">
+              <apex:column value="{!a.id}"/>
+            <apex:column value="{!a.name}"/>
+             <apex:column value="{!a.stagename}"/>
+             <apex:column value="{!a.closedate}"/>
+             <apex:column value="{!a.amount}"/>
+        </apex:pageBlockTable>
+        <br/>
+        <h1>
+        {!controller.pagenumber}of{!nopage}</h1>
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>

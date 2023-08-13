@@ -1,0 +1,15 @@
+<apex:component >
+   
+    <apex:attribute name="empname" type="sobject[]" description="this"/>
+     <apex:attribute name="color" type="string[]" description="this"/>
+     <apex:attribute name="bgcolor" type="string" description="this"/>
+    <apex:pageBlock >
+<apex:pageBlockTable value="{!empname}" var="a">
+        <apex:repeat value="{!color}" var="b">
+    <apex:column value="{!a[b]}"/>
+     </apex:repeat>
+         </apex:pageBlockTable>
+  
+  </apex:pageBlock>
+     
+</apex:component>

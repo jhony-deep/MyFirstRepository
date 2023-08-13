@@ -1,0 +1,16 @@
+<apex:page controller="account_cisual">
+    <apex:form >
+    <apex:pageBlock title="Account from the SOQL" id="pb">
+        <apex:pageBlockButtons location="top">
+        <apex:commandButton value="offset2" action="{!limit5}" reRender="pb" />
+         <apex:commandButton value="count2" action="{!count2}" reRender="pb" />   
+        </apex:pageBlockButtons>
+        <apex:pageBlockTable value="{!accounts}" var="a">
+        <apex:column value="{!a.name}"/>
+        <apex:column value="{!a.phone}"/>
+            <apex:column value="{!a.id}"/>
+            <apex:column value="{!a.industry}"/>
+        </apex:pageBlockTable>
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>

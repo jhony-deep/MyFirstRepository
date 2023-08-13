@@ -1,0 +1,13 @@
+<apex:component >
+    <apex:attribute name="records" type="Sobject[]" description="this is records"/>
+     <apex:attribute name="fields" type="String[]" description="this is fields"/>
+    
+    <apex:pageBlock title="LIST OF RECORD">
+    <apex:pageBlockTable value="{!records}" var="row">
+        <apex:repeat value="{!fields}" var="fld">
+        <apex:column value="{!row[fld]}"/>
+        </apex:repeat>
+        </apex:pageBlockTable>
+    
+    </apex:pageBlock>
+</apex:component>

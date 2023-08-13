@@ -1,0 +1,14 @@
+<apex:page controller="apexclassexample">
+    <apex:form >
+        <apex:pageBlock title="Account">
+            <apex:pageBlockSection columns="1">
+            <apex:inputField value="{!acc.Name}"/>
+             <apex:inputField value="{!acc.AnnualRevenue}"/>
+             <apex:inputField value="{!acc.AccountSource}"/>
+                <apex:inputField value="{!acc.Phone}"/>
+                <apex:selectCheckboxes ></apex:selectCheckboxes>>
+                <apex:selectRadio ></apex:selectRadio>
+            </apex:pageBlockSection>
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>

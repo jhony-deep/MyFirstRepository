@@ -1,0 +1,17 @@
+<apex:page controller="revision_selectoption" >
+    <apex:form >
+    <apex:pageblock id="id"> 
+        <apex:commandButton value="click" action="{!main}"/>
+         <apex:selectList size="1" value="{!selected}">
+        <apex:selectOptions value="{!options}" />
+        <apex:actionSupport event="onchange" action="{!main}" reRender="id"/>
+        </apex:selectList>
+        <apex:pageBlockTable value="{!con}" var="a">
+            <apex:column value="{!a.lastname}"/>
+            <apex:column value="{!a.firstname}"/>
+            <apex:column value="{!a.phone}"/>
+            <apex:column value="{!a.leadsource}"/>
+        </apex:pageBlockTable>
+        </apex:pageblock>
+    </apex:form>
+</apex:page>

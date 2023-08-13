@@ -1,0 +1,4 @@
+<aura:event type="component" description="Event template">
+
+    <aura:attribute name="empname" type="string"/>
+</aura:event>

@@ -1,0 +1,8 @@
+<apex:page standardController="My_NGO_DONATION__c" renderAs="pdf">
+    <apex:form >
+    <apex:sectionHeader title="AASHA KUTEER" subtitle="Healing Hearts"/>
+        <apex:pageBlock >
+     
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>

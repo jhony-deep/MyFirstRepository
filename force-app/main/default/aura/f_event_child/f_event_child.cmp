@@ -1,0 +1,6 @@
+<aura:component >
+    <aura:registerEvent name="registerevent" type="c:f_event"/>
+    <div class="box">
+    <lightning:button label="click_child" onclick="{!c.show}"/>
+        </div>
+</aura:component>

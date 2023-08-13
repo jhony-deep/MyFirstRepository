@@ -1,0 +1,21 @@
+<aura:component >
+    <aura:attribute name="kunal" type="string"/>
+    <big>now see the magic going to happen:{!v.kunal}</big>
+    <hr/>
+    <aura:attribute name="babu" type="string" />
+    <aura:handler name="init" value="{!this}" action="{!c.do}"/>
+    
+      <h1>now see the magic going to happen:{!v.babu}</h1>
+    <hr/>
+    <aura:attribute name="object" type="sobject"/>
+     <h1>now see the magic going to happen:{!v.object.name}====>{!v.object.room}===>{!v.object.floor}</h1>
+    
+    <aura:attribute name="list" type="list" default="['kunal','puneet','pritam','vaneet']"/><hr/>
+    now see the magic going to happen:{!v.list[0]}===>{!v.list[1]}===>{!v.list[2]}===>{!v.list[3]}===>{!v.list.length}
+    <hr/>
+    <aura:attribute name="map" type="map" default="{a:'kunal',b:'abhishek',c:'khirod',d:'himanshu'}"/>
+    now see the magic going to happen:{!v.map.a}==>{!v.map.b}===>{!v.map.c}===>{!v.map.length}<hr/>
+    <aura:attribute name="demobaba" type="hulkwrapper.wrappertest"/>
+    
+     now see the magic going to happen:{!v.demobaba.mystring1}===>{!v.demobaba.myinteger1}
+</aura:component>

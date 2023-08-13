@@ -1,0 +1,11 @@
+<apex:page controller="scheme_example_3">
+    <apex:form >
+    <apex:pageblock title="field name">
+        <apex:pageBlockTable value="{!label}" var="a">
+        <apex:column value="{!a}" headervalue="property"/>
+
+        </apex:pageBlockTable>
+        
+        </apex:pageblock>
+    </apex:form>
+</apex:page>

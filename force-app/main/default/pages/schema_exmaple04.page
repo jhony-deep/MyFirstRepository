@@ -1,0 +1,11 @@
+<apex:page controller="schema_examle_4" >
+    <apex:form >
+    <apex:pageblock title="sobject type">
+        <apex:pageBlockTable value="{!objects}" var="a">
+        <apex:column value="{!a}" headerValue="sobject name"/>
+      
+        
+        </apex:pageBlockTable>
+        </apex:pageblock>
+    </apex:form>
+</apex:page>

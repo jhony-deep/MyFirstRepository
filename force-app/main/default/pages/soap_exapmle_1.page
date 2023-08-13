@@ -1,0 +1,38 @@
+<apex:page controller="soap_example1" >
+    <apex:form >
+     
+        <apex:commandButton value="login" action="{!main}" reRender="one"/>
+       <apex:pageBlock id="one">
+   <apex:inputText value="{!username}"/>
+        <br/>
+         <br/>
+        <br/>
+            <br/>
+        
+    <apex:inputText value="{!password}"/>
+        <br/>
+        <br/>
+            <br/>
+        <apex:outputText value="{!result}" >
+            <br/>
+            
+          
+        </apex:outputText>
+        <br/>
+         <apex:inputText value="{!accname}"/>
+        <br/>
+         <br/>
+        <br/>
+            <br/>
+        
+    <apex:inputText value="{!accindustry}"/>
+        <br/>
+        <br/>
+            <br/>
+        <apex:outputText value="{!status}" >
+            <br/>
+
+        </apex:outputText>
+           </apex:pageBlock>
+    </apex:form>
+</apex:page>

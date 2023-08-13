@@ -1,0 +1,7 @@
+<aura:component >
+   
+    <aura:registerEvent name="one" type="c:application_evt"/>
+    <lightning:input label="enter your name" aura:id="p"/>
+    <lightning:button label="child_button" onclick="{!c.show}"/>
+    
+</aura:component>

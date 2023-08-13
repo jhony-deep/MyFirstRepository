@@ -1,0 +1,6 @@
+<aura:component >
+    <aura:attribute name="opp" type="string"/>
+    <aura:handler event="c:application_evt" action="{!c.invoke}"/>
+    <br/>
+    {!v.opp}
+</aura:component>

@@ -1,0 +1,19 @@
+<aura:component >
+    
+    <aura:handler name="init" value="{!this}" action="{!c.doinit}"/>
+    <aura:attribute name="baba" type="string"/>
+    <br/>
+    kya haal ba:{!v.baba}
+    <hr/>
+    <br/>
+    <lightning:button label="clickonme" onclick="{!c.do}"/>
+    <br/>
+    <hr/>
+    
+    <aura:attribute name="yoga" type="string"/>
+    
+    kya haal ba:{!v.yoga}
+    <hr/>
+    <br/>
+    <lightning:button label="clickonme" onclick="{!c.lo}"/>
+</aura:component>

@@ -1,0 +1,29 @@
+<apex:page controller="ajaxexample" >
+    <apex:form >
+    <apex:pageBlock title="AJAX example no.1" id="pb">
+            <apex:pageBlockTable title="ACCOUnt" value="{!result}" var="a">
+        <apex:column title="NAME" value="{!a.name}" />
+             <apex:column title="PHONE" value="{!a.phone}" />
+             <apex:column title="Industry" value="{!a.industry}" />
+        </apex:pageBlockTable>
+             <apex:pageBlockTable title="lead" value="{!lea}" var="a">
+        <apex:column title="firstname" value="{!a.firstname}" />
+             <apex:column title="lasstname" value="{!a.lastname}" />
+        
+        </apex:pageBlockTable>
+        <br/>
+        PHONE: <apex:inputText value="{!phone}">
+        <apex:actionSupport event="onchange" action="{!callme}"/>
+        </apex:inputText><br/><br/>
+         PHONE: <apex:inputText value="{!phone}">
+        <apex:actionSupport event="onchange" action="{!callmelater}"/>
+        </apex:inputText><br/><br/>
+            <br/>
+    
+        
+       
+        </apex:pageBlock>
+    
+    </apex:form>
+    
+</apex:page>

@@ -1,0 +1,3 @@
+<aura:component >
+    <c:comp_HOme/>
+</aura:component>

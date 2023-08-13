@@ -1,0 +1,18 @@
+<apex:page standardController="My_NGO_MAIN__c" lightningStylesheets="true" >
+    <apex:form style="background:pink">
+    <apex:sectionHeader title="MY NGO MAIN" subtitle="Create New"/>
+    <apex:pageBlock title="This is a Form of New MAIN CONTACT FORMS" tabStyle="opportunity" >
+        <apex:pageBlockButtons location="top">
+<apex:commandButton value="save" action="{!save}" style="background:blue;color:white"/>        
+        </apex:pageBlockButtons>
+    <apex:pageBlockSection title="MAIN CONTACT INFORMATION">
+        <apex:image url="https://www.fortressofsolitude.co.za/wp-content/uploads/2022/10/It-Looks-Like-Robert-Downey-Jr.s-Iron-Man-Might-Return-Afterall.jpg" width="500px"/><br/><br/><br/><br/><br/>
+        <apex:inputField value="{!My_NGO_MAIN__c.NAME__c}"/>
+        <apex:inputField value="{!My_NGO_MAIN__c.ADRESS_LINE_1__c }"/>
+        <apex:inputField value="{!My_NGO_MAIN__c.Wedding_Anniversary_Month__c}"/>
+        <apex:inputField value="{!My_NGO_MAIN__c.OCCUPATION_TYPE__c}"/>
+        <apex:inputField value="{!My_NGO_MAIN__c.OCCASION_DETAIL__c}"/>
+        </apex:pageBlockSection>
+    </apex:pageBlock>
+        </apex:form>
+</apex:page>

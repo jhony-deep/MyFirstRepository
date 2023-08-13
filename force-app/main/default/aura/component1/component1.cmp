@@ -1,0 +1,10 @@
+<aura:component >
+    <aura:registerEvent name="one" type="c:newevent"/>
+    <div class="box">
+        <lightning:input label="Enter your Account Name" aura:id="name"/>
+        
+        <lightning:button label="submit" onclick="{!c.show}"/>
+        
+        
+    </div>
+</aura:component>

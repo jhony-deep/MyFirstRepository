@@ -1,0 +1,17 @@
+<aura:component >
+	<aura:handler name ="init" value="{!this}" action="{!c.show}"></aura:handler>
+    <aura:attribute name="name" type="string"/>
+    <aura:attribute name="institute" type="string"/>
+    <aura:attribute name="fees" type="decimal"/>
+    <aura:attribute name="discount" type="decimal"/>
+    <aura:attribute name="finalamount" type="decimal"/>
+    
+   <div><br/>
+       NAME : {!v.name}<br/>
+       INSTITUTE : {!v.institute}<br/>
+       FEES : {!v.fees}<br/>
+       DISCOUNT : {!v.discount}<br/>
+       FINAL AMOUNT : {!v.finalamount}<br/>
+    </div> 
+    
+</aura:component>

@@ -1,0 +1,12 @@
+<apex:page controller="testobject1" >
+    <apex:form >
+        <apex:pageblock >
+            <apex:pageBlockSection >
+   NAME<apex:inputText value="{!name}"/>
+       PASSWORD   <apex:inputText value="{!password}"/>
+      RESULT  <apex:inputText value="{!result}"/>
+        <apex:commandButton value="submit" action="{!main}"/>
+                </apex:pageBlockSection>
+            </apex:pageblock>
+    </apex:form>
+</apex:page>

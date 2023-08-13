@@ -1,0 +1,10 @@
+<aura:component >
+    <aura:registerEvent name="one" type="c:Event"/>
+     <aura:handler name="one" type="c:Event" action="{!c.invoke}"/>
+    <lightning:button label="click" onclick="{!c.show}"/>
+    <aura:attribute name="name" type="string"/>
+   
+    <br/>
+    <br/>
+    name==={!v.name}
+</aura:component>

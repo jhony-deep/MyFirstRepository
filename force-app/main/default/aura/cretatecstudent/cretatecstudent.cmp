@@ -1,0 +1,21 @@
+<aura:component controller="createcontactviaglobalaction" implements="force:lightningQuickAction,force:hasRecordId" access="GLOBAL">
+	
+    <aura:attribute name="fstname" type="string" />
+        <aura:attribute name="lstname" type="string" />
+    <aura:attribute name="recordId" type="string"/>
+    
+    <div class="slds-m-medium">
+    <lightning:card title="my student" iconName="standard:opportunity">
+        <lightning:input aura:id="1" label="Lastname" />
+         <lightning:input aura:id="2" label="Firstname" />
+       
+         
+        <br/>
+        <lightning:button label="save" onclick="{!c.save}"/>
+       
+        
+        </lightning:card>
+    
+    </div>
+    
+</aura:component>

@@ -1,0 +1,25 @@
+<apex:page controller="accountinputpickvisual">
+    <apex:form id="pb">
+    <apex:pageBlock title="ACCOUNT DYNAMIC SOQL">
+     <apex:pageBlockButtons location="top" >
+         <apex:commandButton value="search" action="{!search1}" reRender="pb"/>
+          </apex:pageBlockButtons>
+       <apex:pageBlockSection >
+        <apex:pageBlockSectionItem >
+            <apex:outputLabel value="Enter Name"/>
+            <apex:inputText value="{!name}"/>
+        </apex:pageBlockSectionItem>
+        <apex:pageBlockSectionItem >
+            <apex:outputLabel value="Enter industry"/>
+            <apex:inputText value="{!industry}"/>
+        </apex:pageBlockSectionItem>
+           </apex:pageBlockSection>
+        <apex:pageBlockTable value="{!accounts}" var="a">
+        <apex:column value="{!a.name}"/>
+            <apex:column value="{!a.phone}"/>
+            <apex:column value="{!a.rating}"/>
+            <apex:column value="{!a.industry}"/>
+        </apex:pageBlockTable>
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>

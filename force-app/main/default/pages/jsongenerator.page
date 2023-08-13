@@ -1,0 +1,24 @@
+<apex:page controller="jsongeneratorexample">
+    <apex:form >
+        <apex:pageBlock title="Acount" >
+            <apex:pageBlockButtons location="top">
+            <apex:commandButton value="submit" action="{!create}" reRender="one"/>
+            </apex:pageBlockButtons>
+        <apex:pageBlockSection columns="1">
+            <apex:pageBlockSectionItem >
+            <apex:outputLabel value="Name"></apex:outputLabel>
+           <apex:inputText value="{!name}" />
+            </apex:pageBlockSectionItem>
+            <apex:pageBlockSectionItem >
+            <apex:outputLabel value="Phone"></apex:outputLabel>
+           <apex:inputText value="{!phone}" />
+            </apex:pageBlockSectionItem>
+            <apex:pageBlockSectionItem >
+            <apex:outputLabel value="AnnualRevenue"></apex:outputLabel>
+           <apex:inputText value="{!annualrevenue}" />
+            </apex:pageBlockSectionItem>
+            </apex:pageBlockSection>
+            <apex:outputLabel value="{!result}" id="one"></apex:outputLabel>
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>

@@ -1,0 +1,26 @@
+<aura:component controller="child_event" >
+    <c:CHILD_Event_COMP/>
+      <aura:attribute name="myname" type="string"/>
+    <aura:attribute name="record" type="object[]"/>
+    <aura:handler name="one" event="c:Event" action="{!c.invoke}"/>
+    <br/>
+    <lightning:card>
+    <table>
+        <tr>
+        <th>Id</th>
+             <th>lastname</th>
+             <th>firstname</th>
+             <th>phone</th>
+             <th>leadsource</th>
+        </tr>
+        <aura:iteration items="{!v.record}" var ="a">
+        <tr>
+            <td>{!a.id}</td>
+             <td>{!a.LastName}</td>
+             <td>{!a.FirstName}</td>
+             <td>{!a.Phone}</td>
+            </tr>
+        </aura:iteration>
+        </table>
+    </lightning:card>
+</aura:component>

@@ -1,0 +1,8 @@
+<aura:component >
+    <aura:registerEvent name="one" type="c:monday_Event"/>
+    <lightning:button label="click" onclick="{!c.con}"/>
+    <lightning:button label="click" onclick="{!c.opp}"/>
+    <lightning:input label="Enter your name for contact" aura:id="myid"/>
+       <lightning:input label="Enter your name for opportunity" aura:id="myid1"/>
+    
+</aura:component>

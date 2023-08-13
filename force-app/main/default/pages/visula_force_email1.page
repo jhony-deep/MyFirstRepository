@@ -1,0 +1,2 @@
+<apex:page standardController="contact" extensions="visulforce_email" action="{!sendemail}">
+</apex:page>

@@ -1,0 +1,23 @@
+<apex:page standardController="account" recordSetVar="items">
+    <apex:form >
+    
+      <apex:pageblock title="Accoount Table">
+       <table width="100%">
+           <tr>
+           <th>Name</th>
+                 <th>phone</th>
+                 <th>rating</th>
+               <th>industry</th>
+           </tr>
+           <apex:repeat value="{!items}" var="a">
+           <tr>
+               <td>{!a.name}</td>
+                <td>{!a.phone}</td>
+                <td>{!a.rating}</td>
+                <td>{!a.industry}</td>
+               </tr>
+           </apex:repeat>
+          </table>
+        </apex:pageblock>
+    </apex:form>
+</apex:page>

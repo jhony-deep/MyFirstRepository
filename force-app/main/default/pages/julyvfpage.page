@@ -1,0 +1,10 @@
+<apex:page standardStylesheets="true" renderAs="pdf">
+    <apex:form >
+     <apex:sectionHeader title="this is for the title" subtitle="This is for the subtitle"/>
+        <apex:pageBlock >
+                <apex:pageBlockButtons location="top">
+        <apex:commandButton value="click me" title="click me"/>
+        </apex:pageBlockButtons>
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>

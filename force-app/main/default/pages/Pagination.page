@@ -1,0 +1,17 @@
+<apex:page controller="paginattion">
+    <apex:form >
+    <apex:pageBlock >
+        <apex:pageBlockButtons location="top">
+        <apex:commandButton value="next" action="{!controller.next}" rendered="{!controller.hasnext}"/>
+               <apex:commandButton value="previous" action="{!controller.previous}" rendered="{!controller.hasprevious}"/>
+        </apex:pageBlockButtons>
+        <apex:pageBlockTable value="{!std}" var="a">
+        <apex:column value="{!a.Student_Name__c}"/>
+            <apex:column value="{!a.name}"/>
+            <apex:column value="{!a.Student_Email__c}"/>
+            <apex:column value="{!a.State__c}"/>
+        </apex:pageBlockTable>
+        {!controller.pagenumber}of{!nopage}
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>

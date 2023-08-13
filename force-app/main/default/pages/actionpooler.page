@@ -1,0 +1,11 @@
+<apex:page controller="actionpooler">
+    
+    <apex:form >
+    <apex:actionStatus startText="intializing...." id="mystatus"></apex:actionStatus>
+    <apex:actionPoller action="{!callme}" interval="5" reRender="one" status="mystatus"/>
+    <apex:outputLabel value="{!result}" id="one"></apex:outputLabel>
+    
+    
+    </apex:form>
+    
+</apex:page>

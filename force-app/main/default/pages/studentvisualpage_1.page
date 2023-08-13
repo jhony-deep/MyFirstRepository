@@ -1,0 +1,19 @@
+<apex:page setup="true"  controller="studentvisual_apex1">
+    <apex:form id="pb">
+    
+        <apex:pageBlock title="STUDENT SOQL">
+            course : <apex:selectList size="1" value="{!selected}">
+        <apex:selectOptions value="{!options}"/>
+            <apex:actionSupport event="onchange" action="{!student}" reRender="pb"/>
+      </apex:selectList>
+        <apex:pageBlockTable value="{!stu}" var="a">
+            <apex:column value="{!a.Id}"/>
+            <apex:column value="{!a.Student_Name__c}"/>
+            <apex:column value="{!a.Student_Email__c}"/>
+            <apex:column value="{!a.Mobile_number__c}"/>
+            <apex:column value="{!a.course_name__c}"/>
+            
+            </apex:pageBlockTable>
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>

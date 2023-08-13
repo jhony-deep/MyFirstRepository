@@ -1,0 +1,12 @@
+<aura:component >
+    <c:f_event_child/>
+    <aura:attribute name="parent" type="string"/>
+    <aura:handler name="registerevent" event="c:f_event" action="{!c.invoke}"/>
+    <br/>
+     <br/>
+     <br/>
+     <br/>
+    <div class="box">
+    RESPONSE ==== {!v.parent}
+        </div>
+</aura:component>

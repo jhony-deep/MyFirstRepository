@@ -1,0 +1,13 @@
+<apex:page controller="http_example">
+    <apex:form >
+    <apex:inputText size="100" value="{!endpoint}"/>
+        <apex:commandButton value="submit" action="{!call}" />
+        <br/>
+        <br/>
+        <apex:inputTextarea cols="50" rows="10" value="{!body}" id="one"/>
+        <br/>
+        <br/>
+        <apex:inputTextarea cols="50" rows="10" value="{!result}" id="two"/>
+        
+    </apex:form>
+</apex:page>

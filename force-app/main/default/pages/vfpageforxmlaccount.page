@@ -1,0 +1,14 @@
+<apex:page controller="xmlacccountsoql">
+    <apex:form >
+   
+       <apex:pageblock id="one">
+            <apex:inputText value="{!name}"/>
+        <apex:commandButton value="search" action="{!getdata}" reRender="one"/>
+        <apex:pageBlockTable value="{!con}" var="a">
+            <apex:column value="{!a.lastname}" headerValue="lastnae"/>
+            <apex:column value="{!a.Firstname}" headerValue="firstnae"/>
+             <apex:column value="{!a.phone}" headerValue="firstnae"/>
+           </apex:pageBlockTable>
+        </apex:pageblock>
+    </apex:form>
+</apex:page>

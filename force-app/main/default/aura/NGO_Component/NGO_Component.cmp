@@ -1,0 +1,14 @@
+<aura:component implements="lightning:availableForFlowScreens,flexipage:availableForAllPageTypes" >
+	<aura:handler name="init" value="{!this}" action="{!c.init}" />
+    <div style="border:1px solid grey;margin:10px;padding:10px">
+        <lightning:card>
+  <aura:set attribute="title">
+         <lightning:avatar src="https://ashakuteer.org/uploads/22693d62f3575f73d23a372530f70ffc.png" size="large" 
+                           initials="BW" fallbackIconName="standard:account" alternativeText="Bob Wilson"/>&nbsp;
+        
+        </aura:set>
+    <lightning:flow aura:id="flowData" />
+            
+    </lightning:card>
+    </div>
+</aura:component>

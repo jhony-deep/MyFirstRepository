@@ -1,0 +1,18 @@
+<aura:component implements="flexipage:availableForRecordHome,force:hasRecordId" access="global" >
+    <aura:attribute name="simple" type="Object"/>
+  
+   
+    <force:recordData aura:id="recordLoader"
+      fields="Name,Phone,Industry"
+      recordId="{!v.recordId}"
+      targetFields="{!v.simple}"
+                      mode="EDIT"
+     
+      />
+    
+    <lightning:card>
+        name:  {!v.simple.Name}<br/>
+        phonw: {!v.simple.Phone}<br/>
+        industry :{!v.simple.Industry}
+        </lightning:card>
+</aura:component>

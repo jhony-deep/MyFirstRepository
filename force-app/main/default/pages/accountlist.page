@@ -1,0 +1,15 @@
+<apex:page controller="flows" lightningStylesheets="true" action="{!main}">
+    <apex:form id="one">
+        <apex:slds />
+    <apex:sectionHeader title="TODAYS CREATED DONATION RECORD TABLE"/>
+    <apex:pageBlock >
+           <apex:pageBlockSection collapsible="true" columns="1">
+    <apex:pageBlockTable value="{!acc}" var="a">   
+        <apex:column value="{!a.Name}"/>
+          <apex:column value="{!a.Phone}"/>
+          <apex:column value="{!a.Id}"/>
+        </apex:pageBlockTable>
+            </apex:pageBlockSection>
+    </apex:pageBlock>
+        </apex:form>
+</apex:page>

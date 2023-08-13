@@ -1,0 +1,21 @@
+<apex:page id="pg" controller="remotewa">
+<script>
+    function show(){
+        remotewa.main('the rock',function(co,event){
+            document.getElementById("pg:fm:pb:pbs:one").innerHTML=co;
+            });
+       
+        }
+    </script>   
+    <apex:form id="fm">
+    <apex:pageBlock id="pb">
+        
+        <apex:pageBlockSection id="pbs" columns="1">
+            <apex:inputTextarea id="one" cols="50" rows="20"/>
+            
+       
+        </apex:pageBlockSection>
+        <apex:commandButton value="submit" oncomplete="show()" />
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>

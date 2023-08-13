@@ -1,0 +1,15 @@
+<apex:page standardController="account" extensions="delete_visualforce" recordSetVar="items" >
+    <apex:form >
+    <apex:pageBlock title="Accounts">
+        <apex:pageBlockButtons location="top">
+            <apex:commandbutton value="delete" action="{!deletedata}"/>
+        </apex:pageBlockButtons>  
+        <apex:pageBlockTable value="{!acc}" var="a">
+        <apex:column value="{!a.name}"/>
+           <apex:column value="{!a.phone}"/>
+        <apex:column value="{!a.rating}"/>
+        <apex:column value="{!a.industry}"/>
+        </apex:pageBlockTable>
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>

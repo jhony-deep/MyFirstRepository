@@ -1,0 +1,16 @@
+<aura:component >
+  <aura:handler name="init" value="{!this}" action="{!c.invoke}"/>
+    <aura:attribute name="principle" type="decimal" default="2500"/>
+     <aura:attribute name="rate" type="decimal" default="10"/>
+     <aura:attribute name="time" type="decimal"  default="1"/>
+     <aura:attribute name="interest" type="decimal"/>
+    <aura:attribute name="totalamount" type="decimal"/>
+   <div><br/>
+       PRINCIPLE :{!v.principle} <br/>
+       RATE:{!v.rate} <br/>
+       TIME :{!v.time} <br/>
+       INTEREST :{!v.interest} <br/>
+       TOTAL_AMOUNT :{!v.totalamount} <br/>
+    </div>
+   
+</aura:component>

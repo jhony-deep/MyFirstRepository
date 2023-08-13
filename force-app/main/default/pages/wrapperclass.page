@@ -1,0 +1,20 @@
+<apex:page controller="wrapper_class">
+    <apex:form >
+    <apex:pageBlock >
+        <apex:pageBlockSection >
+        NAME==<apex:inputText value="{!name}"/>
+            PHONE==<apex:inputText value="{!phone}"/>
+            RATING==<apex:inputText value="{!rating}"/>
+            AMOUNT==<apex:inputText value="{!amount}"/>
+            INDUSTRY==<apex:inputText value="{!industry}"/>
+        </apex:pageBlockSection>
+          <apex:pageBlockSection >
+        NAME==<apex:inputText value="{!name}"/>
+            PHONE==<apex:inputText value="{!phone}"/>
+            RATING==<apex:inputText value="{!rating}"/>
+            AMOUNT==<apex:inputText value="{!amount}"/>
+            INDUSTRY==<apex:inputText value="{!industry}"/>
+        </apex:pageBlockSection>
+        </apex:pageBlock>
+   </apex:form>>
+</apex:page>

@@ -1,0 +1,10 @@
+<apex:page controller="jsonprse" action="{!getdata}">
+    <apex:pageBlock title="jsonparsec">
+        {!jsonstring}<br/>
+        <br/>
+        <apex:pageBlockTable value="{!resmap}" var="a"> 
+            <apex:column value="{!a}" headerValue="Text"/>
+                <apex:column value="{!resmap[a]}" headerValue="Token"/>
+        </apex:pageBlockTable>
+    </apex:pageBlock>
+</apex:page>

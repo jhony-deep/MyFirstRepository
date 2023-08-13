@@ -1,0 +1,9 @@
+<apex:page controller="jsonpaarseacectokenexapmle">
+    <apex:form >
+    <apex:pageBlock title="jsonstringexamle" id="one">
+        <apex:inputTextarea cols="50" rows="10" value="{!jsonString}"/>
+        <apex:commandButton value="submit" action="{!gettoken}" reRender="one"/><br/><br/>
+        accestoken:{!valuetoken}
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>

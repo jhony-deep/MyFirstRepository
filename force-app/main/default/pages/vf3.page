@@ -1,0 +1,27 @@
+<apex:page standardController="account" >
+    <apex:form >
+    <apex:sectionHeader title="Account"/>
+    <apex:pageBlock >
+    <apex:pageBlockSection >
+        <apex:inputField value="{!account.name}"/>
+     <apex:inputField value="{!account.phone}"/>
+        <apex:inputField value="{!account.industry}"/>
+        <apex:inputField value="{!account.rating}"/>
+        
+        </apex:pageBlockSection>
+    </apex:pageBlock>
+        <apex:selectRadio >
+        <apex:selectOption itemLabel="hyd" itemValue="hyd"></apex:selectOption>
+            <apex:selectOption itemLabel="bbsr" itemValue="bbsr"></apex:selectOption>
+            <apex:selectOption itemLabel="rnc" itemValue="rnc"></apex:selectOption>
+            <apex:selectOption itemLabel="jsi" itemValue="jai"></apex:selectOption>
+        </apex:selectRadio>
+        <br/>
+           <apex:selectCheckboxes >
+        <apex:selectOption itemLabel="hyd" itemValue="hyd"></apex:selectOption>
+            <apex:selectOption itemLabel="bbsr" itemValue="bbsr"></apex:selectOption>
+            <apex:selectOption itemLabel="rnc" itemValue="rnc"></apex:selectOption>
+            <apex:selectOption itemLabel="jsi" itemValue="jai"></apex:selectOption>
+      </apex:selectCheckboxes>
+        </apex:form>
+</apex:page>

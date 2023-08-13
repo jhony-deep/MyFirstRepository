@@ -1,0 +1,14 @@
+<apex:page controller="remoteAction" id="pb">
+    <apex:form id="nm">
+        <script>
+        function show(){
+            remoteAction.callme('Kunal',function(result,event){
+            document.getElementById('pb:nm:res').innerHTML=result;
+            });
+        }
+        
+        </script>
+        <apex:commandButton value="submit" oncomplete="show()"/>
+    <apex:outputLabel id="res"></apex:outputLabel>
+    </apex:form>
+</apex:page>

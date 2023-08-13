@@ -1,0 +1,13 @@
+<apex:page >
+    <script src="/soap/ajax/45.00/connection.js" type="text/javascript">
+    </script>
+    <script>
+    function show(){
+        var name='{!GETSESSIONID()}';
+        alert(name);
+    }
+    </script>
+    <apex:form >
+    <apex:commandButton value="click" oncomplete="show()"/>
+    </apex:form>
+</apex:page>

@@ -1,0 +1,14 @@
+<apex:page standardController="opportunity" extensions="visual_page_oppupdate" recordSetVar="items">
+    <apex:form >
+    <apex:pageBlock title="opportunity">
+        <apex:pageBlockButtons location="top">
+            <apex:commandButton value="update" action="{!updatedata}"/>
+        </apex:pageBlockButtons>
+        <apex:pageBlockTable value="{!opty}" var="a">
+        <apex:column value="{!a.name}"/>
+             <apex:column value="{!a.stagename}"/> 
+              <apex:column value="{!a.closedate}"/>
+        </apex:pageBlockTable>
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>

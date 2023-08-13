@@ -1,0 +1,20 @@
+<apex:page controller="Jsonpostalpincode">
+    <apex:form >
+    <apex:pageblock title="pincode">
+        <apex:panelGrid columns="3">
+            
+            
+        <apex:inputText value="{!pincode}"/>
+            <apex:panelGrid >
+            <apex:commandButton value="submit" action="{!main}"/>
+            </apex:panelGrid>
+        <apex:inputTextarea cols="50" rows="10" value="{!body}" />  
+            
+             <apex:inputText value="{!city}"/>
+            
+        </apex:panelGrid>
+        
+        </apex:pageblock>
+    
+    </apex:form>
+</apex:page>

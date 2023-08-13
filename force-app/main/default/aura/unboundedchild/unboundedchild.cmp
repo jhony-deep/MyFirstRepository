@@ -1,0 +1,11 @@
+<aura:component >
+    
+    <br/>
+    <aura:attribute name="childvar" type="string"/>
+    
+    child status : {!v.childvar}
+    <hr/>
+    <lightning:button variant="brand-outline" label="click me" onclick="{!c.onclick}"/>
+                                                <hr/>
+                                                
+</aura:component>

@@ -1,0 +1,25 @@
+<aura:component controller="accountsoql" >
+    <aura:attribute name="opp" type="opportunity[]"/>
+    <aura:handler event="c:newevent" action="{!c.invoke}"/>
+    
+    
+   <div class="box">
+       <table width="100%">
+       <tr width="90%">
+           <th>CloseDate</th>
+           <th>LeadSource</th>
+           <th>StageName</th>
+           	 
+           </tr>
+           <aura:iteration items="{!v.opp}"  var="a">
+  <tr width="90%">
+           <td>{!a.CloseDate}</td>
+           <td>{!a.LeadSource}</td>
+           <td>{!a.StageName}</td>
+       
+           </tr>
+               </aura:iteration>
+       </table>
+     
+    </div>
+</aura:component>

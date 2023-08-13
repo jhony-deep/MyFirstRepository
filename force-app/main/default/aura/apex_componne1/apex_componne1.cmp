@@ -1,0 +1,13 @@
+<aura:component controller ="apex_component">
+    <aura:attribute name="result" type="decimal"/>
+    
+    <div class="block">
+        <lightning:input label="enter your first name" aura:id="fname"/>
+             <lightning:input label="enter your last name" aura:id="lname"/> 
+        <ui:outputText value="{!v.result}"/>
+            <lightning:button label="click" onclick="{!c.call}"/><br/><br/><br/>
+    </div>
+
+    result ====> {!v.result}
+                                                   
+</aura:component>

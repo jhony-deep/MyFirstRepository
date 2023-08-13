@@ -1,0 +1,16 @@
+<apex:page controller="accountsoqlvisualforce" lightningStylesheets="true">
+<apex:slds />
+    <apex:form >
+            <apex:sectionHeader title="Account" subtitle="accountdetails"/>
+    <apex:pageBlock >
+    
+        <apex:pageBlockTable value="{!opp}" var="a">
+        <apex:column value="{!a.Name}" />
+        <apex:column value="{!a.LeadSource}" />
+        <apex:column value="{!a.StageName}" />
+        </apex:pageBlockTable>
+        
+        
+    </apex:pageBlock>
+        </apex:form>
+</apex:page>

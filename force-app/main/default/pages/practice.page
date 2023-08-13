@@ -1,0 +1,30 @@
+<apex:page >
+    <apex:form >
+    <apex:sectionHeader title="SUPER_HERO" subtitle="super_heroes" description="This is a list of super heroes" help="UnDhLp"/>
+       <div>
+           <apex:pageBlock title="Heros" tabStyle="student__c">
+               <apex:pageBlockButtons location="top">
+               <apex:commandButton value="New"/>
+               <apex:commandButton value="Delete"/>
+               </apex:pageBlockButtons>
+               <apex:facet name="footer">This belongs to MR. wick</apex:facet>
+             <!--  <apex:facet name="header">This belongs to MR. wick</apex:facet>-->
+               <apex:pageBlockSection columns="1">
+                   <apex:pageBlockSectionItem >
+                   <apex:outputLabel >Name &nbsp; &nbsp;</apex:outputLabel>
+                   <apex:inputText />
+                   </apex:pageBlockSectionItem>
+                   <apex:pageBlockSectionItem >
+                 <apex:outputLabel >Powers &nbsp; &nbsp;</apex:outputLabel>
+                   <apex:inputText />
+                </apex:pageBlockSectionItem>
+                 <apex:pageBlockSectionItem >
+                 <apex:outputLabel >Universe &nbsp; &nbsp;</apex:outputLabel>
+                   <apex:inputText />
+                 
+                </apex:pageBlockSectionItem>
+               </apex:pageBlockSection>
+           </apex:pageBlock>
+        </div> 
+    </apex:form>
+</apex:page>

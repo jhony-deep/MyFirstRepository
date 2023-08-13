@@ -1,0 +1,11 @@
+<aura:component >
+	
+       <lightning:card title="Opportunity" iconName="standard:opportunity">
+        
+           <lightning:input label="enter your name"/>
+           
+       <lightning:input label="enter your mobile number"/>        
+           <lightning:button label="submit"/>
+        </lightning:card>
+   
+</aura:component>

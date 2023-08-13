@@ -1,0 +1,19 @@
+<apex:page controller="JSON_Example">
+    <div style="height:400px;width:500px;border:5px solid red;padding:20px"><br/>
+        integer : {!integervalue}<br/>
+         decimal : {!decimalvalue}<br/>
+          account : {!accountvalue}<br/>
+        student : {!studentvalue}<br/><br/>
+         integer : {!integervaluepretty}<br/>
+         decimal : {!decimalvaluepretty}<br/>
+          account : {!accountvaluepretty}<br/>
+          student : {!studentvaluepretty}<br/>
+        ===================================<br/>
+        new valuw :{!studentvaluenew}<br/>
+        new valuw : {!studentvaluenewsupress}<br/>
+        ========<br/>
+        integervalue1 :{!integervalue1}<br/>
+        accountvalue1:{!accvalue.name}===={!accvalue.phone}==={!accvalue.industry}
+    </div>
+   
+</apex:page>

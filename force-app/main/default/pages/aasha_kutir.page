@@ -1,0 +1,43 @@
+<apex:page standardController="My_NGO_MAIN__c" lightningStylesheets="true">
+    <apex:form ><apex:pageMessages id="one" ></apex:pageMessages>
+        <DIV STYLE="BACKGROUND:PINK">
+    <apex:sectionHeader title="Create Contact" subtitle="Create new" />
+    <apex:pageBlock tabStyle="opportunity"> 
+        <apex:pageBlockButtons location="bottom">
+            <center><apex:commandButton value="CREATE" action="{!SAVE}" style="BACKGROUND:GREEN;COLOR:WHITE;WIDTH:150PX" /></center>
+        </apex:pageBlockButtons>
+        <apex:pageBlockSection showHeader="true" title="Information" columns="2">
+              <apex:inputField value="{!My_NGO_MAIN__c.NAME__c}"/>
+                    <apex:inputField value="{!My_NGO_MAIN__c.Donor_Class__c}"/>
+              <apex:inputField value="{!My_NGO_MAIN__c.Primary_Email__c}"/>
+              <apex:inputField value="{!My_NGO_MAIN__c.Alternate_Email__c}"/>
+              <apex:inputField value="{!My_NGO_MAIN__c.Primary_Country_Code__c}"/>
+             <apex:inputField value="{!My_NGO_MAIN__c.Primary_Phone__c}"/>
+             <apex:inputField value="{!My_NGO_MAIN__c.Alternate_Country_Codee__c}"/>
+              <apex:inputField value="{!My_NGO_MAIN__c.Alternate_Phone__c   }"/>            
+            <apex:inputField value="{!My_NGO_MAIN__c.Choose_Occupation__c}" />
+                 <apex:inputField value="{!My_NGO_MAIN__c.DESIGNATION__c}"/>
+             <apex:inputField value="{!My_NGO_MAIN__c.Description__c}" />
+                  </apex:pageBlockSection>
+        <apex:pageBlockSection showHeader="true" title="Personal Information" columns="3" collapsible="true">
+              <apex:inputField value="{!My_NGO_MAIN__c.Birth_Date__c}" />
+              <apex:inputField value="{!My_NGO_MAIN__c.Birth_Month__c}"/>
+<apex:inputField value="{!My_NGO_MAIN__c.Birth_Year__c}"/>
+            <apex:inputField value="{!My_NGO_MAIN__c.Wedding_Anniversary_Date__c}"/>
+            <apex:inputField value="{!My_NGO_MAIN__c.Wedding_Anniversary_Month__c}"/>
+             <apex:inputField value="{!My_NGO_MAIN__c.Wedding_Anniversary_Year__c}"/>
+                  </apex:pageBlockSection>
+                <apex:pageBlockSection showHeader="true" title="Address Information" columns="3" collapsible="true">
+              <apex:inputField value="{!My_NGO_MAIN__c.ADRESS_LINE_1__c}"/>
+              <apex:inputField value="{!My_NGO_MAIN__c.ADDRESS_LINE_2__c}"/>
+                       <apex:inputField value="{!My_NGO_MAIN__c.Land_Mark1__c}"/>
+            <apex:inputField value="{!My_NGO_MAIN__c.Enter_your_City__c}"/>
+            <apex:inputField value="{!My_NGO_MAIN__c.Enter_Your_State__c}"/>
+                       <apex:inputField value="{!My_NGO_MAIN__c.Pincode__c}"/>
+                   <apex:inputField value="{!My_NGO_MAIN__c.Country__c}"/> 
+                 
+                  </apex:pageBlockSection>
+        </apex:pageBlock>
+                 </DIV>
+    </apex:form>
+</apex:page>

@@ -1,0 +1,15 @@
+<apex:page >
+    <apex:sectionHeader title="employee" subtitle="my employee" help="https://www.youtube.com/watch?v=Dhoxi1ZWxvE&list=PLZK6NaB0lz2Whlc6V2wkKavI-U9V731P-&index=3" description="employee details" />
+   
+    <apex:pageblock title="opportunity"  tabstyle="opportunity">
+     <apex:facet name="footer"> header info </apex:facet>  
+        <apex:facet name="header">footer info</apex:facet>
+        name:kunal<br/>
+        city:ban<br/>
+        
+         
+       
+    </apex:pageblock>
+
+     
+</apex:page>

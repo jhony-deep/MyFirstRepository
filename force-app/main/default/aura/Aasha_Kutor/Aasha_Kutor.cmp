@@ -1,0 +1,86 @@
+<aura:component implements="flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId" access="global" >
+	<lightning:card>
+    <aura:set attribute="title">
+         <lightning:avatar src="https://ashakuteer.org/uploads/22693d62f3575f73d23a372530f70ffc.png" size="large" 
+                           initials="BW" fallbackIconName="standard:account" alternativeText="Bob Wilson"/>&nbsp;
+        AASHA KUTIR
+        </aura:set>
+        <aura:set attribute="actions">
+                   <lightning:button label="GET IN TOUCH" variant="brand"></lightning:button>
+           9700 700 700 / 8600 600 600&nbsp;&nbsp;&nbsp;&nbsp;
+          <lightning:icon iconName="standard:event" alternativeText="Event" title="Event" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+   
+        <lightning:icon iconName="standard:address" alternativeText="Address" title="Address" />&nbsp;&nbsp;&nbsp;&nbsp;
+            <lightning:icon iconName="standard:email" alternativeText="Email" title="Email">Info@ashakuteer.org</lightning:icon>&nbsp;&nbsp;&nbsp;
+        </aura:set>
+        <lightning:layout horizontalAlign="space">
+        <lightning:layoutItem flexibility="auto">
+          
+            <lightning:card class="box">
+                <lightning:carousel>
+     <lightning:carouselImage
+        src="https://serudsindia.org/wp-content/uploads/2019/11/R_83911-cropped-1-1920x1080.jpg"
+       
+        alternativeText="This is a card">
+    </lightning:carouselImage>
+    <lightning:carouselImage
+        src="https://i.pinimg.com/736x/ea/7f/70/ea7f70fb0b607fe31bdec1b7f8e30b5f.jpg"
+        
+        alternativeText="This is a card">
+    </lightning:carouselImage>
+    <lightning:carouselImage
+        src="https://images.squarespace-cdn.com/content/v1/5797b9f7d1758e16806f3d41/1489902778373-IOORHISJ40Z7SLKMHNV5/image-asset.jpeg?format=1000w"
+
+        alternativeText="This is a card">
+    </lightning:carouselImage>
+   </lightning:carousel>
+            </lightning:card>
+            </lightning:layoutItem>
+                <lightning:layoutItem flexibility="auto">
+            <lightning:card class="box">
+                <lightning:carousel>
+     <lightning:carouselImage
+        src="https://i.pinimg.com/originals/00/97/82/009782e75cf3c04dfb849c979dd0c6b3.jpg"
+        
+        alternativeText="This is a card">
+    </lightning:carouselImage>
+    <lightning:carouselImage
+        src="https://i.pinimg.com/originals/00/97/82/009782e75cf3c04dfb849c979dd0c6b3.jpg"
+        
+        alternativeText="This is a card">
+    </lightning:carouselImage>
+    <lightning:carouselImage
+        src="https://cdn.shopify.com/s/files/1/0041/4584/0174/products/Serve_Needy_603x.jpg?v=1572337656"
+   
+        alternativeText="This is a card">
+    </lightning:carouselImage>
+   </lightning:carousel>
+            </lightning:card>
+            </lightning:layoutItem>
+                <lightning:layoutItem flexibility="auto">
+            <lightning:card class="box">
+                <lightning:carousel>
+     <lightning:carouselImage
+        src="https://akm-img-a-in.tosshub.com/indiatoday/images/story/202107/children-876543_1280__1__3_1200x768.jpeg"
+
+        alternativeText="This is a card">
+    </lightning:carouselImage>
+    <lightning:carouselImage
+        src="https://ak-d.tripcdn.com/images/0221e120008a6to0b3B12_R_960_660_R5_D.png"
+       
+        alternativeText="This is a card">
+    </lightning:carouselImage>
+    <lightning:carouselImage
+        src="https://www.ashakuteer.org/assets/img/about/about-image.jpg"
+     
+        alternativeText="This is a card">
+    </lightning:carouselImage>
+   </lightning:carousel>
+            </lightning:card>
+            </lightning:layoutItem>
+        </lightning:layout>
+        <lightning:layout>
+        
+        </lightning:layout>
+    </lightning:card>
+</aura:component>

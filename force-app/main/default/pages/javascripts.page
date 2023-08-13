@@ -1,0 +1,31 @@
+<apex:page id="pg">
+    
+    <apex:form id="fm">
+        
+     <apex:pageblock id="pb">
+            <script>
+    function show(){
+   
+         var name=document.getElementById('{!$Component.pbs.one}').value;
+         alert(name);
+        
+        /* var phone=document.getElementById("pg:fm:pb:pbs:two").value;
+         alert(phone);
+        
+        var industry=document.getElementById("pg:fm:pb:pbs:three").value;
+         alert(industry);
+        document.getElementById("pg:fm:pb:pbs:four").innerHTML='<b>Your RESULT STATEMENT IS' +name+ '' +phone+ '' +industry+'</b>' ;*/
+       
+      
+    }
+    </script>
+        <apex:pageBlockSection columns="1" id="pbs">
+         ENTER YOUR NAME<apex:inputText id="one" onchange="show()"/>
+            ENTER YOUR PHONE<apex:inputText id="two"/>
+            ENTER YOUR INDUSTRY<apex:inputText id="three" />
+            YOUR RESULT IS <apex:outputText id="four"></apex:outputText>
+         </apex:pageBlockSection>
+         
+        </apex:pageblock>
+    </apex:form>
+</apex:page>

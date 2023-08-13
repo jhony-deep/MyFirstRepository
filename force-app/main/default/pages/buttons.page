@@ -1,0 +1,14 @@
+<apex:page >
+    <apex:form id="one">
+       
+        <apex:commandButton value="mybutton"/><br/>
+       <apex:commandButton value="mybutton" disabled="true"/>  <br/>
+        <apex:commandButton value="kahekabutton" rendered="false" /><br/>
+        hello
+        <apex:commandButton value="kahekabutton" action="/apex/page" /><br/>
+         <apex:commandButton value="kahekabutton" reRender="one" style="background:yellow;color:red;" /><br/>
+   
+        hello 
+        <br/>
+    </apex:form>
+</apex:page>

@@ -1,0 +1,9 @@
+<aura:component >
+	<div class="box">
+        <lightning:input label="Parent Object" aura:id="parent"/>
+    <lightning:input label="Child object" aura:id="child"/>
+        <lightning:button label="search" onclick="{!c.show}"/>
+    
+    </div>
+    {!v.body}
+</aura:component>

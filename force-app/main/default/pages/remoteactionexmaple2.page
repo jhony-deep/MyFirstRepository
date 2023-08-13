@@ -1,0 +1,27 @@
+<apex:page id="page" >
+     <script src="/soap/ajax/56.0/connection.js" type="text/javascript"></script>
+    
+    <script>
+    function show(){
+           sforce.connection.sessionId='{!GETSESSIONID()}';
+     
+        var query = 'select Name from Account limit 4';
+        
+        var queryresult = sforce.connection.query(query);
+        
+        var result = queryresult.getArray('records');
+        // alert(result);
+       
+     
+       document.getElementById('page:fm:res').innertHTML=result.Name;
+    
+    alert(result);
+    </script>
+    <apex:form id="fm">
+    <apex:commandButton value="submit" oncomplete="show()" />
+       <apex:outputLabel id="res"></apex:outputLabel>
+    </apex:form>
+               
+    
+               
+</apex:page>

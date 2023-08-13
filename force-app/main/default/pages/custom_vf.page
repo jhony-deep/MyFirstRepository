@@ -1,0 +1,3 @@
+<apex:page controller="Custom_cmp" >
+    <c:Custom_component empname="{!acc}" color="{!fields}"></c:Custom_component>
+</apex:page>

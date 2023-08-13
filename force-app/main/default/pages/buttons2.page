@@ -1,0 +1,26 @@
+<apex:page >
+    <apex:form >
+    <apex:pageBlock title="hello world">
+    <apex:pageBlockButtons >
+        <apex:commandButton value="click"/>
+        
+        </apex:pageBlockButtons>
+    </apex:pageBlock>
+        <apex:pageBlock title="hello world">
+    <apex:pageBlockButtons location="bottom" dir="rtl">
+        <apex:commandButton value="click"/>
+             <apex:commandButton value="submit"/>
+        </apex:pageBlockButtons>
+            
+    </apex:pageBlock>
+         <apex:pageBlock title="hello world">
+    <apex:pageBlockButtons location="top">
+        <apex:commandButton value="click"/>
+             <apex:commandButton value="submit"/>
+        </apex:pageBlockButtons>
+            
+    </apex:pageBlock>
+    </apex:form>
+    
+    
+</apex:page>

@@ -1,0 +1,14 @@
+<apex:page controller="accountinductry_1">
+  <apex:form >
+    <apex:pageBlock title="Accounts SOQL" id="pb">
+        <apex:pageblocktable value="{!accounts}" var="a">
+        <apex:column value="{!a.Course_Fees__c}"/>
+            <apex:column value="{!a.Student_Name__c}"/>
+          <apex:column value="{!a.course_name__c}"/>
+          <apex:column value="{!a.mobile__c}"/>
+            
+        
+        </apex:pageblocktable>
+      </apex:pageBlock>
+    </apex:form>  
+</apex:page>

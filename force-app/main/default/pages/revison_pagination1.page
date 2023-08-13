@@ -1,0 +1,19 @@
+<apex:page controller="revision_pagination">
+    <apex:form >
+    <apex:pageblock >
+        <apex:pageBlockButtons location="top">
+        <apex:commandButton value="first" action="{!controller.first}"/>
+            <apex:commandButton value="next" action="{!controller.next}"/>
+            <apex:commandButton value="previous" action="{!controller.previous}"/>
+            <apex:commandButton value="last" action="{!controller.last}"/>
+        </apex:pageBlockButtons>
+        <apex:pageBlockTable value="{!acc}" var="a">
+            <apex:column value="{!a.name}"/>
+        <apex:column value="{!a.phone}"/>
+            <apex:column value="{!a.industry}"/>
+            <apex:column value="{!a.rating}"/>
+        </apex:pageBlockTable>
+        {!controller.pagenumber} of {! page_no}
+        </apex:pageblock>
+    </apex:form>
+</apex:page>

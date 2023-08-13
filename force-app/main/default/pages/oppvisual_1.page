@@ -1,0 +1,15 @@
+<apex:page controller="oppvisual">
+    <apex:form >
+        <apex:pageBlock title="OPPO" id="pb">
+        
+        <apex:pageBlockButtons location="top">
+            <apex:commandButton value="ONCLICK" action="{!limit10}" reRender="pb" />
+            <apex:pageBlockTable value="{!opp}" var="a">
+            <apex:column value="{!a.StageName}"/>
+            <apex:column value="{!a.Name}"/>
+            <apex:column value="{!a.ExpectedRevenue}"/>
+            </apex:pageBlockTable>
+                        </apex:pageBlockButtons>
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>

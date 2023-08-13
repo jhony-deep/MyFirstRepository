@@ -1,0 +1,24 @@
+<apex:page controller="apexclassexample2">
+    <apex:form >
+    <apex:pageBlock title="opportunity"> 
+        <br/>
+       <apex:pageBlockSection columns="1">
+           <apex:outputText value="{!opp.Name}"/>
+        <apex:outputText value="{!opp.LeadSource}"/>
+         <apex:outputText value="{!opp.Amount}"/>
+        </apex:pageBlockSection> 
+        </apex:pageBlock>
+        <hr/>
+         <apex:pageBlock title="Contact"> 
+         <apex:pageBlockSection columns="1">
+           <apex:inputField value="{!con.LastName}"/>
+               <apex:inputField value="{!con.FirstName }"/>
+             <apex:inputField value="{!con.Name }"/>             
+        <apex:inputField value="{!con.LeadSource}"/>
+         <apex:inputField value="{!con.phone}"/>
+         </apex:pageBlockSection> 
+        </apex:pageBlock>
+    </apex:form>
+    
+    
+</apex:page>

@@ -1,0 +1,11 @@
+<apex:page controller="reutrn" >
+    <apex:form >
+    <apex:pageblock >
+        Enter Your Name<apex:inputText value="{!likename}"/>
+        <apex:dataTable value="{!acc}" var="a" rendered="{! !isblank(acc)}">
+       <apex:column value="{!a.name}"/>
+        </apex:dataTable>
+        </apex:pageblock>
+        <apex:commandButton value="click" action="{!main}"/>
+    </apex:form>
+</apex:page>

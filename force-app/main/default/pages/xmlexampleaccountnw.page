@@ -1,0 +1,7 @@
+<apex:page controller="xmlexampleaccoutnw">
+    <apex:form >
+    <apex:inputText value="{!searchtext}" />
+        <apex:commandButton value="search" action="{!getdata}"/>
+        result:{!result}
+    </apex:form>
+</apex:page>

@@ -1,0 +1,4 @@
+<apex:page controller="myfirstviualcomponent">
+    <c:MYFIRSTVISUALFORCECOMPONENT records="{!acc}" fields="{!accfields}"/> 
+       <c:MYFIRSTVISUALFORCECOMPONENT records="{!con}" fields="{!confields}"/>
+</apex:page>

@@ -1,0 +1,19 @@
+<apex:page controller="xmldesrialzeexapmle" >
+    <apex:form >
+    <apex:pageBlock title="XML CONVERT">
+        <apex:panelGrid columns="4">
+      
+        <apex:inputTextarea cols="50" rows="20" value="{!xmlstring}"/>
+            
+      
+        <apex:panelGrid >
+        <apex:commandButton value="convert" action="{!convert}"/>
+            </apex:panelGrid>
+     
+       
+       <apex:inputTextarea cols="50" rows="20" value="{!result}"/>
+         
+            </apex:panelGrid>
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>

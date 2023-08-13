@@ -1,0 +1,12 @@
+<apex:page standardController="Account" recordSetVar="items" lightningStylesheets="true">
+    <apex:form >
+my name kus kunal anand
+        <apex:pageBlock >
+      <apex:dataTable value="{!items}" var="a">
+          <apex:column value="{!a.Name}" />
+             <apex:column value="{!a.phone}" />
+             <apex:column value="{!a.rating}" />
+            </apex:dataTable>
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>

@@ -1,0 +1,39 @@
+<aura:component >
+    <c:monday_Event_child/>
+    <aura:handler  name="one" event="c:monday_Event" action="{!c.invoke}"/>
+    <aura:attribute name="newattribute" type="contact[]"/> 
+     <aura:attribute name="newlist" type="opportunity[]"/> 
+   
+    <lightning:card title="Contact Details" class="border:2px solid red">
+  <table>
+    <tr>
+      <th>LastName</th>
+      <th>FirstName</th>
+        <th>Phone</th>
+      </tr>
+    <aura:iteration items="{!v.newattribute}" var="a">
+      <tr>
+        <td>{!a.LastName}</td>
+        <td>{!a.FirstName}</td>
+          <td>{!a.Phone}</td>
+        </tr>
+      </aura:iteration>
+    </table>
+        </lightning:card>
+       <lightning:card title="Contact Details" class="border:2px solid red">
+  <table>
+    <tr>
+      <th>LastName</th>
+      <th>FirstName</th>
+        <th>Phone</th>
+      </tr>
+    <aura:iteration items="{!v.newlist}" var="a">
+      <tr>
+        <td>{!a.Name}</td>
+        <td>{!a.StageName}</td>
+          <td>{!a.Amount}</td>
+        </tr>
+      </aura:iteration>
+    </table>
+        </lightning:card>
+</aura:component>
