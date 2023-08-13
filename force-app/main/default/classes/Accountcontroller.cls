@@ -1,12 +1,9 @@
-public class Accountcontroller {
-
+public with sharing class Accountcontroller {
+//This is chai wala comment
     @auraEnabled
         
     public static list<Account> getaccounts(){
         
-        list<Account> acclst= new list<Account>();
-        acclst = [select id,Name from Account];
-        
-        return acclst;
+        return null;
     }
 }
