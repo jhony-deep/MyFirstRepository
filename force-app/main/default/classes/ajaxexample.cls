@@ -1,5 +1,5 @@
 public class ajaxexample {
-
+//adedd for the testing purpose
     public list<Account> result {set;get;}
     public string phone {set;get;}
    public list<Lead> lea {set;get;}
